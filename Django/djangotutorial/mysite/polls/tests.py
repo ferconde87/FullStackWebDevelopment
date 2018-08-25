@@ -57,6 +57,7 @@ class QuestionModelTests(TestCase):
 
 
 class QuestionIndexViewTests(TestCase):
+
     def test_past_question_and_no_choices(self):
         """
         If the past question has no choices to choose, the question is not displayed
@@ -128,6 +129,7 @@ class QuestionIndexViewTests(TestCase):
 
 
 class QuestionDetailViewTests(TestCase):
+    
     def test_future_question(self):
         """
         The detail view of a question with a pub_date in the future
