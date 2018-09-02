@@ -18,10 +18,5 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     url(r'^', include('snippets.urls')),
-    # url(r'^users/$', views.UserList.as_view()),
-    # url(r'^users/(?P<pk>[0-9]+)/$', views.UserDetail.as_view()),
-]
-
-urlpatterns += [
     url(r'^api-auth/', include('rest_framework.urls')),
 ]
