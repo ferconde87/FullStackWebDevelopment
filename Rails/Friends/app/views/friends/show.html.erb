@@ -1,0 +1,13 @@
+<div class="container py-4">
+
+  <div class="p-3 pb-4 bg-light">
+    <div class="container-fluid">
+      <h1 class="display-5 fw-bold"><%= @friend.first_name %> <%= @friend.last_name %></h1>
+      <p class="lead pb-2"><%= @friend.email %> | <%= @friend.phone %> | <%= @friend.twitter %> </p>
+      <%= link_to 'Edit', edit_friend_path(@friend), class: 'btn btn-success btn-lg' %>
+      <td><%= link_to 'Delete', @friend, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-lg" %></td>
+      <%= link_to 'Back', friends_path, class: 'btn btn-success btn-lg' %>
+    </div>
+  </div>
+
+</div>
